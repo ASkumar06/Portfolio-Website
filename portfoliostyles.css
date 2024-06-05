@@ -1,0 +1,329 @@
+.header {
+    display: flex;
+    height: 85px;
+    background-color: rgb(37, 47, 69);
+    border-style: none none solid;
+    border-color: rgb(131, 125, 244);
+    border-width: 1.5px;
+    background-image: url(icons/abstractbackground.jpg);
+    background-position: left;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    box-shadow:0px 20px rgba(38, 43, 134, 0.17);
+    position: fixed;
+    top:0px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+
+}
+
+.left-section {
+    display: flex;
+    width: 350px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15px;
+}
+
+.dev-icon {
+    height: 47px;
+    width: 47px;
+    margin-right: 9px;
+}
+
+.name-header {
+    display: inline-block;
+    font-family: "Roboto Condensed";
+    font-weight: 500;
+    font-size: 33px;
+    color: rgb(35, 68, 249);
+    background-image: url(icons/abstractbackground.jpg);
+    background: linear-gradient(rgba(94, 94, 206,0.1),rgb(26, 26, 128),rgba(94, 94, 206,0.1));
+    letter-spacing: 0.7px;
+    text-shadow: rgb(195, 218, 253) -1px 1px 0px, rgb(195, 218, 253) 1px 1px 0px, rgb(195, 218, 253) 1px -1px 0px, rgb(195, 218, 253) -1px -1px 0px;
+    border-radius: 2px;
+    padding-left: 5px;
+    padding-right: 4px;
+}
+
+.middle-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 120px;
+    padding-left: 90px;
+    flex: 1 1 0%;
+}
+
+.home-button, .skills-button, .projects-button {
+    height: 45px;
+    width: 90px;
+    background-color: rgb(15, 32, 69);
+    color: grey;
+    font-weight: 300;
+    font-family: "Bebas Neue";
+    font-size: 18px;
+    border-radius: 25px;
+    border-color: rgb(98, 72, 248);
+    border-style: solid;
+    transition: background-color 0.4s, border-color 0.2s, color 0.4s;
+}
+
+.home-button:hover, .skills-button:hover, .projects-button:hover {
+    background-color: rgb(98, 72, 248);
+    color: rgb(245, 245, 245);
+    cursor: pointer;
+    border-color: rgb(15, 32, 69);
+}
+
+.cert-button {
+    height: 45px;
+    width: 110px;
+    background-color: rgb(15, 32, 69);
+    font-weight: 300;
+    font-family: "Bebas Neue";
+    font-size: 18px;
+    color: grey;
+    border-radius: 35px;
+    border-color: rgb(98, 72, 248);
+    border-style: solid;
+    transition: background-color 0.4s, border-color 0.4s, color 0.4s;
+}
+
+.cert-button:hover {
+    background-color: rgb(98, 72, 248);
+    color: rgb(245, 245, 245);
+    cursor: pointer;
+    border-color: rgb(15, 32, 69);
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 15px;
+    flex: 1 1 0%;
+}
+
+.search-bar {
+    width: 80%;
+    min-width: 30px;
+    height: 37px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 2px;
+    background-color: rgb(11, 23, 49);
+    color: rgb(252, 252, 252);
+    font-size: 16px;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: rgb(98, 72, 248);
+}
+
+.search-bar::placeholder{
+    font-family: "Roboto Condensed";
+}
+
+.voice-button {
+    height: 42px;
+    width: 42px;
+    background-color: transparent;
+    margin-left: 4px;
+    padding: 0px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    transition: border-width 0.3s, border-color 0.3s ; border-style: 0.3s;
+}
+
+.voice-button:hover {
+    border-radius: 21px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(98, 72, 248);
+}
+
+.voice-icon {
+    height: 36px;
+    width: 36px;
+    margin: 0px;
+}
+
+.about-container{
+    margin-top: 60px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.about-pic{
+    margin-left: 100px;
+    width:30%;
+}
+
+.about-text{  
+    padding-left: 20px;
+    width: 70%;  
+    border-color: rgba(95, 95, 245, 0.683);
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 14px;
+    border-right: none;
+   
+}
+
+.intro-text{
+    font-family: Freeman;
+    font-weight: 400;
+    font-size: 22px;
+    margin-top: 4px;
+}
+
+.profile-pic{
+    height: 250px;
+    width: 250px;
+}
+
+.timeline{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:1fr 5px 1fr;
+    max-height: 1000px;
+    margin:0 50px 20px 50px;  
+    column-gap: 35px;
+    row-gap: 25px;
+}
+
+.timeline-top{
+    background-color: rgb(113, 113, 238);
+    
+}
+
+.timeline-middle{
+    background-color: rgb(83, 136, 252);
+    border-radius: 2px;
+    position:relative;
+    grid-column:1/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.timeline-bottom{
+    background-color: rgb(219, 132, 1);
+}
+
+.circle1,.circle2,.circle3{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: rgb(1, 4, 108);
+    border-color:rgb(70, 97, 247);
+    border-width: 2px;
+    border-style:solid; 
+    position:absolute;
+    transform: translate(-50%, -50%);
+}
+
+.circle1{
+    grid-column-start: 1;
+}
+
+.circle2{
+    grid-column-start: 2;
+}
+
+.circle3{
+    grid-column-start: 3;
+}
+
+.text-top,.text-bottom{
+    width: 240px;
+    font-family: Freeman;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    border-color: rgb(109, 80, 253);
+    border-width: 2px;
+    border-radius:6px;
+    border-style: solid;
+    background-color: rgba(0, 0, 56, 0.18);
+    padding:8px;
+}
+
+.topic{
+    margin:110px 0 30px 40px;
+    font-family: "Roboto Condensed";
+    font-weight: 700;
+    font-size: 33px;
+    color: white;
+    letter-spacing: 0.1px;
+    border-bottom-color: rgba(97, 97, 247, 0.329);
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    padding-bottom: 3px;
+
+    
+}
+
+.date-top{
+    font-family: Freeman;
+    font-weight: 400;
+    font-size: 18px;
+    color:white;
+    margin-top:135px;
+}
+
+.date-bottom{
+    font-family: Freeman;
+    font-weight: 400;
+    font-size: 18px;
+    color:white;
+}
+.skill-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    padding: 0 10px 0 10px;
+
+}
+.skills-grid{
+    margin:90px 100px 50px 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 250px 250px;
+    row-gap: 25px;
+}
+.skill-logo{
+    height: 60px;
+    width: 60px; 
+   
+}
+.skill-name{
+    text-align: center;
+    font-family: Freeman;
+    font-weight: 400;
+    font-size: 18px;
+    color:white;
+}
+
+.skill-desc{
+    text-align: center;
+    font-family: Freeman;
+    font-weight: 400;
+    font-size: 15px;
+    color:white;
+}
+
+
+
+
